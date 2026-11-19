@@ -6,7 +6,7 @@ resource "aws_iam_policy" "demo_s3_read" {
     Statement = [{
       Effect   = "Allow"
       Action   = "s3:GetObject"
-      Resource = "*"
+     Resource = "arn:aws:s3:::demo-iam-policy-check-bucket/*"
     }]
   })
 }
